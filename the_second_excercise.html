@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Second Front-end Excercise</title>
+</head>
+<body>
+<h2>Create a function to remove duplicate value from an array with Javascript.</h2>
+<h3>
+	Input: <p id="input"></p>
+</h3>
+<h3>
+	Output: <p id="output"></p> 
+</h3>
+<script type="text/javascript">
+	const inputArray = [1, 2, 2, 3, 4, 6, 7, 8, 6];
+
+	const outputArray = [];
+
+	function removeDuplicates(array) {
+		let outputArray = inputArray.filter(function(currentValue, index, arr) {
+			return index == inputArray.indexOf(currentValue);
+		});
+
+		return outputArray;
+	}
+	
+	result = removeDuplicates(inputArray);
+	console.log(result);
+	document.getElementById("input").innerHTML = inputArray.toString();
+	document.getElementById("output").innerHTML = result.toString();
+</script>
+</body>
+</html>

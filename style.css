@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+.row {
+	margin-left: auto;
+  	margin-right: auto;
+	text-align: center;
+}
+
+h2 {
+	text-decoration: underline;
+	text-decoration-color: orange; 
+	text-underline-position: under;
+	padding-bottom: 20px;
+}
+
+.gallery {
+	border: 1px solid #ccc;
+}
+
+.gallery img {
+	max-width: 100%;
+	height: auto;
+}
+
+.caption {
+	padding: 15px;
+	text-align: left;
+	border-top: 1px solid #ccc;
+}
+
+.caption img {
+	width: 20px;
+	height: 20px;
+}
+
+.caption p {
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+	.responsive {
+		width: 50%;
+		margin: 6px 0;
+	}
+} 
+
+@media only screen and (max-width: 576px) {
+	.responsive {
+		width: 100%;
+	}
+} 
